@@ -1,23 +1,23 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <Links />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Links from "./components/Links.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    Links,
   },
 
   data: () => ({
     //
   }),
-}
+};
 </script>

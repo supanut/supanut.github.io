@@ -2,53 +2,15 @@
 import { useSeoMeta } from '#imports'
 
 useSeoMeta({
-  title: 'Supanut Vatesaranasutee - Chief Technology Product Officer',
-  description: 'Chief Technology Product Officer with 9+ years of experience in software engineering and technology leadership. Specializing in system architecture, mobile/web development, and digital health.',
-  ogTitle: 'Supanut Vatesaranasutee | CTPO',
-  ogDescription: 'Portfolio of Supanut Vatesaranasutee, Technology Leader & CTPO at Evolt Technology.',
+  title: 'Supanut Vatesaranasutee - Senior Solution Architect & Technology Leader',
+  description: 'Technical leader and Full-Stack Software Engineer with 15+ years of experience. Specializing in system architecture, mobile/web development, and digital health.',
+  ogTitle: 'Supanut Vatesaranasutee | Tech Leader',
+  ogDescription: 'Portfolio of Supanut Vatesaranasutee, Senior Solution Architect at IBM Digital Talent for Business.',
 })
 
-const experience = [
-  {
-    role: 'Chief Technology Product Officer',
-    company: 'Evolt Technology',
-    period: 'Present',
-    description: 'Leading technology and product strategy, overseeing engineering teams, and driving innovation in EV charging solutions.',
-    icon: 'i-heroicons-bolt',
-  },
-  {
-    role: 'Senior Solutions Architect',
-    company: 'KASIKORN Business-Technology Group (KBTG)',
-    period: 'Previous',
-    description: 'Designed scalable system architectures and led technical initiatives for enterprise-grade financial applications.',
-    icon: 'i-heroicons-building-library',
-  },
-  {
-    role: 'Head of Technology for Digital Health',
-    company: 'True Digital Group',
-    period: 'Previous',
-    description: 'Built and mentored a 20-member technology team. Developed digital health products driving significant user growth and strategic partnerships.',
-    icon: 'i-heroicons-heart',
-  },
-  {
-    role: 'System Engineer',
-    company: 'Netservice Co., Ltd.',
-    period: 'Previous',
-    description: 'Started career focusing on system engineering, infrastructure, and core software solutions.',
-    icon: 'i-heroicons-server',
-  }
-]
+const getLogoUrl = (domain: string) => `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://${domain}&size=128`
 
-const skills = [
-  { name: 'System Architecture', icon: 'i-heroicons-rectangle-group' },
-  { name: 'Technology Leadership', icon: 'i-heroicons-users' },
-  { name: 'Product Strategy', icon: 'i-heroicons-chart-bar' },
-  { name: 'Mobile App Development', icon: 'i-heroicons-device-phone-mobile' },
-  { name: 'Web Development', icon: 'i-heroicons-computer-desktop' },
-  { name: 'Team Mentoring', icon: 'i-heroicons-academic-cap' },
-  { name: 'Digital Health', icon: 'i-heroicons-heart' },
-  { name: 'EV Technology', icon: 'i-heroicons-bolt' },
-]
+
 
 const links = [
   { label: 'LinkedIn', icon: 'i-simple-icons-linkedin', to: 'https://www.linkedin.com/in/supanut' },
@@ -86,9 +48,8 @@ const links = [
           </h1>
 
           <p class="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl text-balance leading-relaxed">
-            Chief Technology Product Officer seamlessly blending <span
-              class="font-semibold text-neutral-900 dark:text-neutral-100">engineering depth</span> with <span
-              class="font-semibold text-neutral-900 dark:text-neutral-100">product vision</span>.
+            Technical leader and Full-Stack Software Engineer with <span
+              class="font-semibold text-neutral-900 dark:text-neutral-100">15+ years of experience</span>.
           </p>
         </div>
 
@@ -97,91 +58,13 @@ const links = [
             trailing-icon="i-heroicons-arrow-up-right" class="font-semibold px-6 shadow-md shadow-primary-500/20">
             Let's Connect
           </UButton>
-          <UButton size="xl" color="neutral" variant="soft" to="mailto:supanut@example.com"
+          <UButton size="xl" color="neutral" variant="soft" to="mailto:supanut.vt@gmail.com"
             trailing-icon="i-heroicons-envelope" class="font-semibold px-6">
             Get in touch
           </UButton>
         </div>
       </section>
 
-      <!-- Experience -->
-      <section class="space-y-10 animate-fade-in-up" style="animation-delay: 100ms;">
-        <div class="space-y-2">
-          <h2 class="text-3xl font-bold tracking-tight flex items-center gap-2">
-            <UIcon name="i-heroicons-briefcase" class="text-primary-500 w-8 h-8" />
-            Professional Experience
-          </h2>
-          <p class="text-neutral-500 dark:text-neutral-400 text-lg">My 9+ years journey in tech leadership and
-            architecture.</p>
-        </div>
-
-        <div class="space-y-6">
-          <UCard v-for="job in experience" :key="job.company"
-            class="group transition-all duration-300 hover:ring-2 hover:ring-primary-500/50 dark:hover:ring-primary-400/50 hover:shadow-lg dark:hover:shadow-primary-900/10">
-            <template #header>
-              <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
-                <div class="flex items-center gap-4">
-                  <div
-                    class="p-3 rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 group-hover:bg-primary-50 dark:group-hover:bg-primary-950/50 group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors">
-                    <UIcon :name="job.icon" class="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-neutral-900 dark:text-white">{{ job.role }}</h3>
-                    <p class="text-md font-medium text-primary-600 dark:text-primary-400">{{ job.company }}</p>
-                  </div>
-                </div>
-                <UBadge color="neutral" variant="soft" size="md" class="w-fit self-start md:self-auto">{{ job.period }}
-                </UBadge>
-              </div>
-            </template>
-            <p class="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed">
-              {{ job.description }}
-            </p>
-          </UCard>
-        </div>
-      </section>
-
-      <div class="grid md:grid-cols-5 gap-10 animate-fade-in-up" style="animation-delay: 200ms;">
-
-        <!-- Skills -->
-        <section class="md:col-span-3 space-y-8">
-          <h2 class="text-3xl font-bold tracking-tight flex items-center gap-2">
-            <UIcon name="i-heroicons-wrench-screwdriver" class="text-primary-500 w-8 h-8" />
-            Core Expertise
-          </h2>
-          <div class="flex flex-wrap gap-3">
-            <UBadge v-for="skill in skills" :key="skill.name" color="neutral" variant="soft" size="lg"
-              class="px-4 py-2 text-sm font-medium hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors">
-              <UIcon :name="skill.icon" class="mr-2 w-4 h-4 opacity-70" />
-              {{ skill.name }}
-            </UBadge>
-          </div>
-        </section>
-
-        <!-- Education -->
-        <section class="md:col-span-2 space-y-8">
-          <h2 class="text-3xl font-bold tracking-tight flex items-center gap-2">
-            <UIcon name="i-heroicons-academic-cap" class="text-primary-500 w-8 h-8" />
-            Education
-          </h2>
-          <UCard
-            class="bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-900 dark:to-neutral-950 shadow-sm transition-transform hover:-translate-y-1">
-            <div class="space-y-3">
-              <div
-                class="inline-flex items-center justify-center p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 m-0">
-                <UIcon name="i-heroicons-building-library" class="w-6 h-6" />
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-neutral-900 dark:text-white leading-tight">Chulalongkorn University
-                </h3>
-                <p class="text-neutral-600 dark:text-neutral-400 font-medium">Bachelor of Engineering</p>
-                <p class="text-sm text-neutral-500 dark:text-neutral-500">Computer Engineering</p>
-              </div>
-            </div>
-          </UCard>
-        </section>
-
-      </div>
 
       <!-- Footer -->
       <UFooter

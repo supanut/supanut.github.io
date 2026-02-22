@@ -48,8 +48,8 @@ const links = [
           </h1>
 
           <p class="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl text-balance leading-relaxed">
-            Technical leader and Full-Stack Software Engineer with <span
-              class="font-semibold text-neutral-900 dark:text-neutral-100">15+ years of experience</span>.
+            Technical leader/executive, Solution Architect and Full-Stack Software Engineer with <span
+              class="font-semibold text-neutral-900 dark:text-neutral-100">15+ years of experiences</span>.
           </p>
         </div>
 
@@ -74,12 +74,6 @@ const links = [
           <p class="font-medium text-sm">
             © {{ new Date().getFullYear() }} Supanut Vatesaranasutee.
           </p>
-          <div
-            class="flex items-center gap-1 text-sm bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-700">
-            Built with
-            <UIcon name="i-simple-icons-nuxtdotjs" class="text-green-500 w-4 h-4 mx-1" /> Nuxt &
-            <UIcon name="i-simple-icons-tailwindcss" class="text-sky-400 w-4 h-4 ml-1" /> Tailwind CSS
-          </div>
         </div>
       </UFooter>
 
